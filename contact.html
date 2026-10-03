@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez PC en Nord pour un dépannage ou une assistance informatique locale.">
+    <title>Contact – PC en Nord</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav" aria-label="Navigation principale">
+            <a class="nav__brand" href="index.html">PC en Nord</a>
+            <a class="nav__link" href="contact.html" aria-current="page">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-intro" aria-labelledby="contact-heading">
+            <div class="container">
+                <p class="eyebrow">Assistance informatique · Nord</p>
+                <h1 id="contact-heading">Contactez PC en Nord</h1>
+                <p class="hero__lead">Indiquez vos coordonnées et le créneau souhaité. Nous vous recontactons rapidement.</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="container">
+                <form class="contact-form" action="contact.html" method="get">
+                    <div class="form-grid">
+                        <div class="field">
+                            <label for="nom">Nom</label>
+                            <input type="text" id="nom" name="nom" autocomplete="family-name">
+                        </div>
+                        <div class="field">
+                            <label for="prenom">Prénom</label>
+                            <input type="text" id="prenom" name="prenom" autocomplete="given-name">
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" autocomplete="email">
+                        </div>
+                        <div class="field">
+                            <label for="telephone">Téléphone</label>
+                            <input type="tel" id="telephone" name="telephone" autocomplete="tel">
+                        </div>
+                        <div class="field">
+                            <label for="date">Date souhaitée</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        <div class="field">
+                            <label for="heure">Heure souhaitée</label>
+                            <input type="time" id="heure" name="heure">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6"></textarea>
+                    </div>
+                    <div class="field field--check">
+                        <input type="checkbox" id="urgent" name="urgent" value="oui">
+                        <label for="urgent">Urgent : contactez-moi dès que possible</label>
+                    </div>
+                    <button class="btn" type="submit">Envoyer ma demande</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>PC en Nord – Dépannage informatique locale</p>
+            <p class="footer__mentions">SIRET fictif 000 000 000 00000 · Mentions légales fictives · © 2026 PC en Nord</p>
+        </div>
+    </footer>
+</body>
+</html>

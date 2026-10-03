@@ -2,11 +2,174 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>PC En Nord</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PC en Nord – Dépannage et assistance informatique locale. Interventions rapides, solutions fiables, service de proximité.">
+    <title>PC en Nord – Dépannage &amp; Assistance Informatique Locale</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Bienvenue chez PC En Nord</h1>
-    <!-- Test auteur Git -->
+    <header class="site-header">
+        <nav class="nav" aria-label="Navigation principale">
+            <a class="nav__brand" href="index.html">PC en Nord</a>
+            <a class="nav__link" href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accueil" class="hero">
+            <div class="container hero__inner">
+                <p class="eyebrow">Assistance informatique · Nord</p>
+                <h1>Dépannage &amp; Assistance Informatique Locale</h1>
+                <p class="hero__lead">Interventions rapides, solutions fiables, service de proximité</p>
+                <a class="btn" href="contact.html">Nous contacter</a>
+            </div>
+        </section>
+
+        <section id="pourquoi" class="pourquoi" aria-labelledby="pourquoi-title">
+            <div class="container">
+                <h2 id="pourquoi-title">Pourquoi choisir PC en Nord&nbsp;?</h2>
+                <p class="section-intro">Un accompagnement clair, humain et efficace, près de chez vous.</p>
+                <ul class="cards">
+                    <li class="card">
+                        <span class="icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <rect x="6" y="10" width="28" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M16 30v4h8v-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M34 22h8v12H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M14 18h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                        <h3>Dépannage PC</h3>
+                        <p>Diagnostic précis et remise en état de votre ordinateur, sans jargon inutile.</p>
+                    </li>
+                    <li class="card">
+                        <span class="icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <path d="M24 22a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 38c1.6-6 6.2-9 12-9s10.4 3 12 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M8 20h6M34 20h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                        <h3>Assistance à domicile</h3>
+                        <p>Intervention sur place pour dépanner, installer ou vous former à votre rythme.</p>
+                    </li>
+                    <li class="card">
+                        <span class="icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <path d="M16 34V14l16-6v20" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                <circle cx="16" cy="34" r="5" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="32" cy="28" r="5" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <h3>Conseils &amp; installation</h3>
+                        <p>Choix du matériel, configuration et mise en service adaptés à vos besoins.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="services" class="services" aria-labelledby="services-title">
+            <div class="container">
+                <h2 id="services-title">Nos services</h2>
+                <p class="section-intro">Des prestations ciblées pour particuliers et petits professionnels.</p>
+                <ul class="services__list">
+                    <li>
+                        <span class="icon icon--sm" aria-hidden="true">
+                            <svg viewBox="0 0 32 32" fill="none">
+                                <circle cx="14" cy="14" r="7" stroke="currentColor" stroke-width="2"/>
+                                <path d="M19 19l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Diagnostic</h3>
+                            <p>Identification rapide des pannes logicielles et matérielles.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="icon icon--sm" aria-hidden="true">
+                            <svg viewBox="0 0 32 32" fill="none">
+                                <rect x="6" y="8" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M6 13h20" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Réinstallation système</h3>
+                            <p>Windows, sauvegarde des fichiers et remise en route propre.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="icon icon--sm" aria-hidden="true">
+                            <svg viewBox="0 0 32 32" fill="none">
+                                <path d="M16 6l2.5 6.5L25 15l-6.5 2.5L16 24l-2.5-6.5L7 15l6.5-2.5L16 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Nettoyage &amp; sécurité</h3>
+                            <p>Virus, malwares, optimisation et bonnes pratiques de protection.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="icon icon--sm" aria-hidden="true">
+                            <svg viewBox="0 0 32 32" fill="none">
+                                <rect x="7" y="11" width="18" height="12" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M11 11V9a5 5 0 0 1 10 0v2" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Sauvegarde de données</h3>
+                            <p>Copie, récupération et organisation de vos fichiers importants.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="icon icon--sm" aria-hidden="true">
+                            <svg viewBox="0 0 32 32" fill="none">
+                                <circle cx="16" cy="16" r="4" stroke="currentColor" stroke-width="2"/>
+                                <path d="M16 6v3M16 23v3M6 16h3M23 16h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Réseau &amp; Wi-Fi</h3>
+                            <p>Box, imprimantes, partage de fichiers et connexion stable.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="icon icon--sm" aria-hidden="true">
+                            <svg viewBox="0 0 32 32" fill="none">
+                                <path d="M8 22V10h16v12" stroke="currentColor" stroke-width="2"/>
+                                <path d="M6 22h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M13 14h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Installation matériel</h3>
+                            <p>PC, périphériques, mises à niveau et configuration initiale.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="contact" aria-labelledby="contact-title">
+            <div class="container contact__inner">
+                <h2 id="contact-title">Nous contacter</h2>
+                <p class="section-intro">Décrivez votre besoin : nous revenons vers vous rapidement.</p>
+                <address class="contact__details">
+                    <p>Téléphone : <a href="tel:+33320000000">03 20 00 00 00</a></p>
+                    <p>E-mail : <a href="mailto:contact@pcennord.exemple">contact@pcennord.exemple</a></p>
+                    <p>Zone d’intervention : Métropole lilloise et environs</p>
+                </address>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>PC en Nord – Dépannage informatique locale</p>
+            <p class="footer__mentions">SIRET fictif 000 000 000 00000 · Mentions légales fictives · © 2026 PC en Nord</p>
+        </div>
+    </footer>
 </body>
 </html>
