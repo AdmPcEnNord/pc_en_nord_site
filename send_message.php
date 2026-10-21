@@ -1,4 +1,9 @@
 <?php
+// honeypot
+if (!empty($_POST['website'])) {
+    die("Bot détecté.");
+}
+
 // Définition de la timezone
 date_default_timezone_set('Europe/Paris');
 
