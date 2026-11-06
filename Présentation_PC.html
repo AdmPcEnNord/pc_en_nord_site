@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dell OptiPlex 3020 Reconditionné - PC en Nord</title>
+
+<link rel="stylesheet" href="style.css">
+
+<meta name="description"
+content="Dell OptiPlex 3020 reconditionné avec Windows 11 Pro activé, SSD 240 Go, 16 Go de RAM, Wi‑Fi, clavier et souris inclus. Livraison et installation possibles dans le Nord.">
+
+<style>
+
+.hero{
+    padding-top:140px;
+}
+
+:root{
+    --dark-blue:#0F1E36;
+    --blue:#1E3A5F;
+    --accent:#2F80ED;
+    --whitesmoke:#F5F5F5;
+    --success:#27AE60;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+    background:var(--whitesmoke);
+    color:#222;
+    line-height:1.6;
+}
+
+/* HERO */
+
+.hero{
+    background:var(--dark-blue);
+    color:white;
+    padding:70px 20px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+    color: #ffffff;
+}
+
+.hero p{
+    font-size:1.2rem;
+    opacity:0.95;
+}
+
+.price-box{
+    margin-top:30px;
+}
+
+.price{
+    font-size:3rem;
+    font-weight:bold;
+    color:#4DA3FF;
+}
+
+/* SECTION GENERALE */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section{
+    padding:60px 0;
+}
+
+h2{
+    color:var(--dark-blue);
+    margin-bottom:25px;
+    font-size:2rem;
+}
+
+/* GALERIE PHOTO */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.photo-placeholder{
+    height:220px;
+    border:3px dashed #bbb;
+    background:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#666;
+    font-size:1rem;
+    border-radius:10px;
+}
+
+/* CONFIGURATION */
+
+.specs{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.spec-card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.spec-card ul{
+    list-style:none;
+}
+
+.spec-card li{
+    padding:8px 0;
+}
+
+/* AVANTAGES */
+
+.benefits{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.benefit{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+.benefit h3{
+    color:var(--dark-blue);
+    margin-bottom:10px;
+}
+
+/* TARIF */
+
+.offer{
+    background:var(--dark-blue);
+    color:white;
+    text-align:center;
+    padding:50px;
+    border-radius:20px;
+}
+
+.offer h2{
+    color:white;
+}
+
+.big-price{
+    font-size:4rem;
+    font-weight:bold;
+    margin:20px 0;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    background:var(--accent);
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:8px;
+    font-size:1.1rem;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#1868d5;
+}
+
+/* GARANTIE */
+
+.guarantee{
+    background:white;
+    padding:30px;
+    border-left:6px solid var(--success);
+    border-radius:10px;
+}
+
+/* FOOTER */
+
+footer{
+    background:var(--dark-blue);
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:60px;
+}
+
+/* Lightbox */
+
+.lightbox{
+    display:none;
+    position:fixed;
+    z-index:9999;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    justify-content:center;
+    align-items:center;
+}
+
+.lightbox img{
+    max-width:90%;
+    max-height:90%;
+    border-radius:10px;
+}
+
+.close{
+    position:absolute;
+    top:20px;
+    right:40px;
+    color:white;
+    font-size:40px;
+    cursor:pointer;
+}
+
+.photo{
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.photo:hover{
+    transform:scale(1.03);
+}
+
+.photo{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+
+.inclus-card{
+    display:flex;
+    align-items:center;
+    gap:40px;
+}
+
+.inclus-text{
+    flex:1;
+}
+
+.inclus-image{
+    flex:1;
+    text-align:center;
+}
+
+.inclus-image img{
+    max-width:100%;
+    max-height:300px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.inclus-image img:hover{
+    transform:scale(1.02);
+}
+
+@media (max-width:768px){
+
+    .inclus-card{
+        flex-direction:column;
+    }
+
+}
+
+.hero-content{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:60px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-image{
+    flex:1;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:500px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+@media (max-width:768px){
+
+    .hero-content{
+        flex-direction:column;
+    }
+
+}
+
+.service-box{
+    margin-top:30px;
+    background:#E8F4FF;
+    border-left:6px solid #2F80ED;
+    color:#0F1E36;
+    font-size:1.2rem;
+    font-weight:bold;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.container p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+
+.description p{
+    max-width:1100px;
+}
+
+.spec-card-image{
+    display:flex;
+    align-items:center;
+    gap:40px;
+}
+
+.spec-card-image ul{
+    flex:1;
+}
+
+.spec-image img{
+    width: 210px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+
+.spec-image{
+    margin-left:30px;
+}
+
+@media (max-width:768px){
+
+    .spec-card-image{
+        flex-direction:column;
+    }
+
+    .spec-image img{
+        width:100%;
+        max-width:250px;
+    }
+
+}
+
+.btn{
+    transition:0.2s ease;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+.btn{
+    transition:all 0.2s ease;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.20);
+}
+
+.reconditionne-box{
+    display:flex;
+    gap:25px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.reconditionne-item{
+    flex:1;
+    min-width:250px;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    transition:0.25s;
+}
+
+.reconditionne-item:hover{
+    transform:translateY(-5px);
+}
+
+.reconditionne-item strong{
+    display:block;
+    margin-top:10px;
+    font-size:1.2rem;
+    color:var(--dark-blue);
+}
+
+.btn{
+    position:relative;
+    overflow:hidden;
+}
+
+.btn::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:50%;
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.25),
+        transparent
+    );
+
+    transition:0.8s;
+}
+
+.btn:hover::before{
+    left:150%;
+}
+
+</style>
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav" aria-label="Navigation principale">
+            <a class="nav__brand" href="index.html">PC en Nord</a>
+            <a class="nav__link" href="contact.html">Contact</a>
+            <a class="nav__link" href="Présentation_PC.html">Acheter un PC</a>
+        </nav>
+    </header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+
+            <h1>Dell OptiPlex 3020 Reconditionné</h1>
+
+            <p>
+                Ordinateur prêt à l'emploi, rapide, fiable et préparé avec soin
+                par PC en Nord.
+            </p>
+
+            <div class="price-box">
+
+                <div class="price">199 €</div>
+
+                <p>
+                    Windows 11 Pro activé • Wi‑Fi inclus
+                </p>
+
+                <p style="margin-top:20px;font-size:1.2rem;font-weight:bold;color:#90EE90;">
+                    Prêt à l'emploi : branchez-le et commencez à travailler immédiatement.
+                </p>
+
+                <br>
+
+                <p style="font-size:1rem;">
+                    ✅ Garantie 1 mois<br>
+                    ✅ Câbles fournis (secteur + VGA + DisplayPort)<br>
+                    ✅ Livraison et installation à domicile possibles en Pévèle, à Orchies, Coutiches et dans les villages voisins<br>
+                </p>
+
+                <a href="contact.html" class="btn">
+                    Réserver ce PC
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="assets/photos_dell/Dell_1.jpg"
+                 alt="Dell OptiPlex 3020">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- GALERIE -->
+
+<section>
+
+<div class="container">
+
+<h2>Photos du produit</h2>
+
+<div class="gallery">
+
+<img src="assets/photos_dell/Dell_1.jpg" class="photo" alt="Dell OptiPlex 3020 reconditionné Windows 11">
+<img src="assets/photos_dell/Dell_2.jpg" class="photo" alt="Dell OptiPlex 3020 reconditionné Windows 11">
+<img src="assets/photos_dell/Dell_3.jpg" class="photo" alt="Dell OptiPlex 3020 reconditionné Windows 11">
+<img src="assets/photos_dell/Dell_4.jpg" class="photo" alt="Dell OptiPlex 3020 reconditionné Windows 11">
+<img src="assets/photos_dell/Dell_5.jpg" class="photo" alt="Dell OptiPlex 3020 reconditionné Windows 11">
+<img src="assets/photos_dell/cdm.png" class="photo" alt="Test CrystalDiskMark SSD Dell OptiPlex 3020">
+<img src="assets/photos_dell/cdi.png" class="photo" alt="Test CrystalDiskInfo SSD Dell OptiPlex 3020">
+<img src="assets/photos_dell/Windows 11 Pro.png" class="photo" alt="Dell OptiPlex 3020 reconditionné Windows 11">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- DESCRIPTION -->
+
+<section>
+
+<div class="container">
+
+<h2>Un ordinateur reconditionné avec soin</h2>
+
+<p>
+Chaque ordinateur vendu par PC en Nord est entièrement démonté,
+nettoyé, inspecté et testé avant sa mise en vente.
+</p>
+
+<p>
+Le SSD est contrôlé, Windows 11 Professionnel est installé proprement,
+les pilotes sont mis à jour et des tests de stabilité sont réalisés.
+</p>
+
+<p>
+L'ordinateur est livré prêt à l'emploi avec les câbles nécessaires,
+un dongle Wi‑Fi et une licence Windows activée.
+</p>
+
+
+</div>
+
+<div class="service-box">
+
+    🚚 Livraison locale possible<br>
+    🛠️ Installation à domicile disponible<br>
+    📶 Configuration Internet et Wi‑Fi<br>
+    <!-- 🖨️ Installation imprimante possible -->
+
+</div>
+
+<section>
+
+<!-- Configuration technique et bureautique-->
+
+<div class="container">
+
+<h2>Configuration technique</h2>
+
+<div class="specs">
+
+    <div class="spec-card spec-card-image">
+
+        <div>
+
+            <ul>
+                <li>✅ Intel Core i5-4590</li>
+                <li>✅ 16 Go de RAM</li>
+                <li>✅ SSD 240 Go</li>
+                <li>✅ Windows 11 Pro</li>
+                <li>✅ Dongle Wi-Fi inclus</li>
+                <li>✅ Microsoft Defender</li>
+            </ul>
+
+        </div>
+
+        <div class="spec-image">
+
+            <img src="assets/photos_dell/cdm.png"
+                 alt="Test CrystalDiskMark">
+
+        </div>
+
+    </div>
+
+
+    <div class="spec-card spec-card-image">
+
+        <div>
+
+            <ul>
+                <li>✅ Navigation Internet</li>
+                <li>✅ Télétravail</li>
+                <li>✅ Visioconférence</li>
+                <li>✅ Bureautique</li>
+                <li>✅ Gestion administrative</li>
+                <li>✅ Streaming vidéo HD</li>
+            </ul>
+
+        </div>
+
+        <div class="spec-image">
+
+            <img src="assets/photos_dell/parametres_windows11 .png"
+                 alt="Windows 11">
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+<!--Elements inclus avec l'ordinateur-->
+
+<section>
+
+<div class="container">
+
+<h2>Inclus avec votre ordinateur</h2>
+
+<div class="spec-card inclus-card">
+
+    <div class="inclus-text">
+
+        <ul>
+            <li>✅ Dell OptiPlex 3020 reconditionné</li>
+            <li>✅ Windows 11 Professionnel activé</li>
+            <li>✅ Ensemble clavier et souris Inclus</li>
+            <li>✅ Dongle Wi‑Fi USB inclus</li>
+            <li>✅ Câble d'alimentation fourni</li>
+            <li>✅ Câble VGA fourni</li>
+            <li>✅ Câble DisplayPort fourni</li>
+            <li>✅ Antivirus Microsoft Defender</li>
+            <li>✅ Installation Office possible sur demande</li>
+        </ul>
+
+    </div>
+
+    <div class="inclus-image">
+        <img src="assets/photos_dell/Dell_3.jpg"
+             alt="Dell OptiPlex 3020">
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- RECONDITIONNEMENT -->
+
+<section>
+
+<div class="container">
+
+<h2>Préparation et reconditionnement</h2>
+
+<div class="benefits">
+
+<div class="benefit">
+<h3>Nettoyage complet</h3>
+<p>Nettoyage intérieur et extérieur du matériel.</p>
+</div>
+
+<div class="benefit">
+    <h3>Contrôle matériel</h3>
+    <p>Inspection des composants et vérification du bon fonctionnement.</p>
+</div>
+
+<div class="benefit">
+    <h3>Installation Windows</h3>
+    <p>Windows 11 Pro installé et entièrement mis à jour.</p>
+</div>
+
+<div class="benefit">
+    <h3>Tests de stabilité</h3>
+    <p>Contrôles complets avant livraison.</p>
+</div>
+
+</div>
+</div>
+
+</section>
+
+<section>
+
+<section class="reconditionne">
+
+    <div class="container">
+
+        <h2>Pourquoi choisir un PC reconditionné ?</h2>
+
+        <div class="reconditionne-box">
+
+            <div class="reconditionne-item">
+                ♻️
+                <strong>Économique</strong>
+                <p>
+                    Profitez d'excellentes performances pour un budget maîtrisé.
+                </p>
+            </div>
+
+            <div class="reconditionne-item">
+                🌍
+                <strong>Écologique</strong>
+                <p>
+                    Prolongez la durée de vie du matériel informatique et réduisez les déchets électroniques.
+                </p>
+            </div>
+
+            <div class="reconditionne-item">
+                🔧
+                <strong>Fiable</strong>
+                <p>
+                    Chaque ordinateur est nettoyé, contrôlé et testé avant sa mise en vente.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</section>
+
+<footer>
+    <h2 style="color:white;">Une question ?</h2>
+
+<p>
+Contactez PC en Nord pour toute demande d'information,
+de réservation ou de livraison.
+</p>
+
+<a href="contact.html" class="btn">
+Nous contacter
+</a>
+
+<br><br>
+
+© PC en Nord
+</footer>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+
+const photos = document.querySelectorAll('.photo');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const closeBtn = document.querySelector('.close');
+
+photos.forEach(photo => {
+
+    photo.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = photo.src;
+    });
+
+});
+
+closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+});
+
+lightbox.addEventListener('click', (e) => {
+
+    if (e.target === lightbox) {
+        lightbox.style.display = 'none';
+    }
+
+});
+
+</script>
+
+</body>
+</html>

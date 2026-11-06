@@ -156,7 +156,7 @@ ul {
 .btn {
     display: inline-block;
     padding: 0.85rem 1.4rem;
-    background: var(--dark-blue);
+    background: #4DA3FF;
     color: var(--white);
     text-decoration: none;
     font: inherit;
@@ -164,12 +164,40 @@ ul {
     border: 0;
     border-radius: 0.4rem;
     cursor: pointer;
-    transition: background 0.2s ease, opacity 0.2s ease;
+
+    position: relative;
+    overflow: hidden;
+
+    transition: all 0.3s ease;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+
+    width: 50%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.35),
+        transparent
+    );
+
+    transition: left 0.7s ease;
 }
 
 .btn:hover,
 .btn:focus-visible {
-    background: var(--deep-blue);
+    background: #2F80ED;
+    transform: translateY(-3px);
+}
+
+.btn:hover::before{
+    left: 150%;
 }
 
 .pourquoi,
