@@ -440,3 +440,120 @@ ul {
         gap: 1.25rem 1.15rem;
     }
 }
+
+
+/* =========================
+   PAGE PRODUITS
+   ========================= */
+
+.products {
+    padding: 4rem 0;
+}
+
+.products-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.product-card {
+    background: var(--white);
+    border: 1px solid var(--fog-muted);
+    border-radius: var(--radius);
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    border-color: #4DA3FF;
+    box-shadow: 0 15px 35px rgba(0,0,0,.10);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.product-content {
+    padding: 1.5rem;
+}
+
+.product-content h3 {
+    margin-bottom: .8rem;
+}
+
+.product-specs {
+    margin-bottom: 1rem;
+}
+
+.product-specs li {
+    margin-bottom: .4rem;
+    color: var(--text-muted);
+}
+
+.product-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 720px) {
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+.product-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 0.35rem 0.75rem;
+
+    background: rgba(77, 163, 255, 0.12);
+    color: var(--dark-blue);
+
+    border: 1px solid rgba(77, 163, 255, 0.25);
+    border-radius: 999px;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.local-service {
+    margin-top: 4rem;
+    padding: 2rem;
+    background: var(--white);
+    border: 1px solid var(--fog-muted);
+    border-radius: var(--radius);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+.local-service h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.local-service p {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
+.local-service strong {
+    color: var(--dark-blue);
+}
