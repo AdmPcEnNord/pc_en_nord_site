@@ -88,8 +88,13 @@ ul {
     position: fixed;
     inset: 0 0 auto;
     z-index: 100;
-    background: var(--dark-blue);
-    box-shadow: 0 1px 0 rgba(13, 27, 42, 0.25);
+
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    border-bottom: 1px solid #dbe4ee;
+    box-shadow: 0 2px 15px rgba(13, 27, 42, 0.08);
 }
 
 .nav {
@@ -102,31 +107,27 @@ ul {
 }
 
 .nav__brand {
+    background: var(--dark-blue);
+    color: white;
+    padding: 0.55rem 1rem;
+    border-radius: 12px;
     text-decoration: none;
-    color: var(--white);
     font-weight: 700;
-    letter-spacing: 0.02em;
 }
 
 .nav__link {
     text-decoration: none;
-    color: var(--white);
+    color: var(--dark-blue);
     font-weight: 500;
     padding: 0.35rem 0;
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid transparent;
     transition: opacity 0.2s ease, border-color 0.2s ease;
 }
 
-.nav__brand:hover,
-.nav__link:hover,
-.nav__brand:focus-visible,
-.nav__link:focus-visible {
-    opacity: 0.82;
-}
-
 .nav__link:hover,
 .nav__link:focus-visible {
-    border-bottom-color: rgba(255, 255, 255, 0.45);
+    color: #4DA3FF;
+    border-bottom-color: #4DA3FF;
 }
 
 .hero {
@@ -156,7 +157,7 @@ ul {
 .btn {
     display: inline-block;
     padding: 0.85rem 1.4rem;
-    background: #4DA3FF;
+    background: var(--dark-blue);
     color: var(--white);
     text-decoration: none;
     font: inherit;
@@ -192,7 +193,7 @@ ul {
 
 .btn:hover,
 .btn:focus-visible {
-    background: #2F80ED;
+    background: var(--dark-blue);
     transform: translateY(-3px);
 }
 
